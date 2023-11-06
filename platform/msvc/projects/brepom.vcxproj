@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\include\brepom\AttrColor.h" />
+    <ClInclude Include="..\..\..\include\brepom\Attribute.h" />
+    <ClInclude Include="..\..\..\include\brepom\AttrNamedShape.h" />
+    <ClInclude Include="..\..\..\include\brepom\AttrNaming.h" />
+    <ClInclude Include="..\..\..\include\brepom\AttrRenderObj.h" />
+    <ClInclude Include="..\..\..\include\brepom\BRepBuilder.h" />
+    <ClInclude Include="..\..\..\include\brepom\BRepExplore.h" />
+    <ClInclude Include="..\..\..\include\brepom\CompHalfEdge.h" />
+    <ClInclude Include="..\..\..\include\brepom\Component.h" />
+    <ClInclude Include="..\..\..\include\brepom\Label.h" />
+    <ClInclude Include="..\..\..\include\brepom\LabelBuilder.h" />
+    <ClInclude Include="..\..\..\include\brepom\LabelTools.h" />
+    <ClInclude Include="..\..\..\include\brepom\Object.h" />
+    <ClInclude Include="..\..\..\include\brepom\PrimBuilder.h" />
+    <ClInclude Include="..\..\..\include\brepom\RenderBuilder.h" />
+    <ClInclude Include="..\..\..\include\brepom\TopoAdapter.h" />
+    <ClInclude Include="..\..\..\include\brepom\TopoBody.h" />
+    <ClInclude Include="..\..\..\include\brepom\TopoEdge.h" />
+    <ClInclude Include="..\..\..\include\brepom\TopoFace.h" />
+    <ClInclude Include="..\..\..\include\brepom\TopoLoop.h" />
+    <ClInclude Include="..\..\..\include\brepom\TopoShape.h" />
+    <ClInclude Include="..\..\..\include\brepom\TopoShapeType.h" />
+    <ClInclude Include="..\..\..\include\brepom\TopoShell.h" />
+    <ClInclude Include="..\..\..\include\brepom\TopoVertex.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\include\brepom\Object.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\source\AttrColor.cpp" />
+    <ClCompile Include="..\..\..\source\AttrNamedShape.cpp" />
+    <ClCompile Include="..\..\..\source\AttrNaming.cpp" />
+    <ClCompile Include="..\..\..\source\AttrRenderObj.cpp" />
+    <ClCompile Include="..\..\..\source\BRepBuilder.cpp" />
+    <ClCompile Include="..\..\..\source\BRepExplore.cpp" />
+    <ClCompile Include="..\..\..\source\CompHalfEdge.cpp" />
+    <ClCompile Include="..\..\..\source\Component.cpp" />
+    <ClCompile Include="..\..\..\source\Label.cpp" />
+    <ClCompile Include="..\..\..\source\LabelBuilder.cpp" />
+    <ClCompile Include="..\..\..\source\LabelTools.cpp" />
+    <ClCompile Include="..\..\..\source\Object.cpp" />
+    <ClCompile Include="..\..\..\source\PrimBuilder.cpp" />
+    <ClCompile Include="..\..\..\source\RenderBuilder.cpp" />
+    <ClCompile Include="..\..\..\source\TopoAdapter.cpp" />
+    <ClCompile Include="..\..\..\source\TopoBody.cpp" />
+    <ClCompile Include="..\..\..\source\TopoEdge.cpp" />
+    <ClCompile Include="..\..\..\source\TopoFace.cpp" />
+    <ClCompile Include="..\..\..\source\TopoLoop.cpp" />
+    <ClCompile Include="..\..\..\source\TopoShell.cpp" />
+    <ClCompile Include="..\..\..\source\TopoVertex.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>brepom</ProjectName>
+    <ProjectGuid>{20AB7E71-ACCC-4DE5-8AE6-42609FB066E2}</ProjectGuid>
+    <RootNamespace>brepom</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <PlatformToolset>v143</PlatformToolset>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <PlatformToolset>v143</PlatformToolset>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>15.0.26730.12</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\brepom\x86\Debug\</OutDir>
+    <IntDir>..\brepom\x86\Debug\obj\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\brepom\x86\Release\</OutDir>
+    <IntDir>..\brepom\x86\Release\obj\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IntDir>$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IntDir>$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\sm;..\..\..\..\easyvm\include;..\..\..\..\polymesh3\include;..\..\..\..\halfedge\include;</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;__STDC_LIMIT_MACROS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\sm;..\..\..\..\easyvm\include;..\..\..\..\polymesh3\include;..\..\..\..\halfedge\include;</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;__STDC_LIMIT_MACROS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\sm;..\..\..\..\easyvm\include;..\..\..\..\guard\include;..\..\..\..\halfedge\include;..\..\..\..\polymesh3\include;..\..\..\..\unirender\include </AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <Optimization>Disabled</Optimization>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PreprocessorDefinitions>_DEBUG;</PreprocessorDefinitions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\sm;..\..\..\..\easyvm\include;..\..\..\..\guard\include;..\..\..\..\halfedge\include;..\..\..\..\polymesh3\include;..\..\..\..\unirender\include </AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;</PreprocessorDefinitions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,5 @@
+brepom/
+projects/*
+
+!projects/*.vcxproj
+!projects/*.vcxproj.filters
