@@ -1,6 +1,7 @@
 #include "brepom/LabelBuilder.h"
 #include "brepom/Label.h"
 #include "brepom/AttrNamedShape.h"
+#include "brepom/AttrPolytope.h"
 #include "brepom/TopoShape.h"
 #include "brepom/TopoShell.h"
 #include "brepom/TopoFace.h"
@@ -33,6 +34,16 @@ void LabelBuilder::BuildFromShape(const std::shared_ptr<Label>& label,
 		auto child = std::make_shared<Label>();
 		child->AddComponent<AttrNamedShape>(nullptr, face);
 		label->AddChild(child);
+	}
+}
+
+void LabelBuilder::BuildFromPolytope(const std::shared_ptr<Label>& label,
+	                                 const std::shared_ptr<pm3::Polytope>& poly)
+{
+	if (label->HasComponent<AttrPolytope>()) {
+		label->GetComponent<AttrPolytope>().SetPoly(poly);
+	} else {
+		label->AddComponent<AttrPolytope>(poly);
 	}
 }
 
