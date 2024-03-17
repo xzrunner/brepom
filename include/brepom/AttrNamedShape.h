@@ -14,7 +14,7 @@ public:
 		const std::shared_ptr<TopoShape>& dst);
 
 	virtual const char* Type() const override { return "named_shape"; }
-	virtual CompID TypeID() const override { return GetCompTypeID<AttrNamedShape>(); }
+	virtual objcomp::CompID TypeID() const override { return objcomp::GetCompTypeID<AttrNamedShape>(); }
 	virtual Attribute* Clone() const override { return nullptr; }
 
 	auto GetSrc() const { return m_src; }

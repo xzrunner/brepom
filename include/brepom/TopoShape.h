@@ -1,18 +1,16 @@
 #pragma once
 
-#include "Object.h"
 #include "TopoShapeType.h"
+
+#include <objcomp/Object.h>
 
 namespace brepom
 {
 
-class TopoShape : public Object
+class TopoShape : public objcomp::Object
 {
 public:
-	virtual ~TopoShape() 
-	{
-		int zz = 0;
-	}
+	virtual ~TopoShape() {}
 
 	virtual TopoShapeType GetType() const = 0;
 	virtual std::shared_ptr<TopoShape> Clone() const = 0;

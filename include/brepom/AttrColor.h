@@ -13,9 +13,9 @@ class AttrColor : public Attribute
 {
 public:
 	AttrColor(const sm::vec3& color);
-
+	
 	virtual const char* Type() const override { return "color"; }
-	virtual CompID TypeID() const override { return GetCompTypeID<AttrColor>(); }
+	virtual objcomp::CompID TypeID() const override { return objcomp::GetCompTypeID<AttrColor>(); }
 	virtual Attribute* Clone() const override { return nullptr; }
 
 	auto& GetColor() const { return m_color; }

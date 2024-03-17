@@ -14,7 +14,7 @@ public:
 	AttrNaming(uint32_t tag) : m_tag(tag) {}
 
 	virtual const char* Type() const override { return "naming"; }
-	virtual CompID TypeID() const override { return GetCompTypeID<AttrNaming>(); }
+	virtual objcomp::CompID TypeID() const override { return objcomp::GetCompTypeID<AttrNaming>(); }
 	virtual Attribute* Clone() const override { return nullptr; }
 
 	//void SetTag(uint32_t tag) { m_tag = tag; }

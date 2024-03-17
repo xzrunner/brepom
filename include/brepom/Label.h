@@ -1,13 +1,13 @@
 #pragma once
 
-#include "Object.h"
+#include <objcomp/Object.h>
 
 #include <vector>
 
 namespace brepom
 {
 
-class Label : public Object
+class Label : public objcomp::Object
 {
 public:
 	~Label();

@@ -1,12 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="..\..\..\source\Component.cpp">
-      <Filter>base</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\source\Object.cpp">
-      <Filter>base</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\source\AttrColor.cpp">
       <Filter>label\attribute</Filter>
     </ClCompile>
@@ -64,16 +58,11 @@
     <ClCompile Include="..\..\..\source\Label.cpp">
       <Filter>label\base</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\source\AttrPolytope.cpp">
+      <Filter>label\attribute</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\..\include\brepom\Object.inl">
-      <Filter>base</Filter>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Filter Include="base">
-      <UniqueIdentifier>{7cae0ae2-5e00-461d-9beb-9b5d3331f702}</UniqueIdentifier>
-    </Filter>
     <Filter Include="label">
       <UniqueIdentifier>{718d4b18-f4e5-490f-8a84-66afc742b3ac}</UniqueIdentifier>
     </Filter>
@@ -103,12 +92,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\include\brepom\Component.h">
-      <Filter>base</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\include\brepom\Object.h">
-      <Filter>base</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\include\brepom\AttrColor.h">
       <Filter>label\attribute</Filter>
     </ClInclude>
@@ -174,6 +157,9 @@
     </ClInclude>
     <ClInclude Include="..\..\..\include\brepom\Label.h">
       <Filter>label\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\brepom\AttrPolytope.h">
+      <Filter>label\attribute</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

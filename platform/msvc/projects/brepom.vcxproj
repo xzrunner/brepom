@@ -21,17 +21,16 @@
   <ItemGroup>
     <ClInclude Include="..\..\..\include\brepom\AttrColor.h" />
     <ClInclude Include="..\..\..\include\brepom\Attribute.h" />
+    <ClInclude Include="..\..\..\include\brepom\AttrPolytope.h" />
     <ClInclude Include="..\..\..\include\brepom\AttrNamedShape.h" />
     <ClInclude Include="..\..\..\include\brepom\AttrNaming.h" />
     <ClInclude Include="..\..\..\include\brepom\AttrRenderObj.h" />
     <ClInclude Include="..\..\..\include\brepom\BRepBuilder.h" />
     <ClInclude Include="..\..\..\include\brepom\BRepExplore.h" />
     <ClInclude Include="..\..\..\include\brepom\CompHalfEdge.h" />
-    <ClInclude Include="..\..\..\include\brepom\Component.h" />
     <ClInclude Include="..\..\..\include\brepom\Label.h" />
     <ClInclude Include="..\..\..\include\brepom\LabelBuilder.h" />
     <ClInclude Include="..\..\..\include\brepom\LabelTools.h" />
-    <ClInclude Include="..\..\..\include\brepom\Object.h" />
     <ClInclude Include="..\..\..\include\brepom\PrimBuilder.h" />
     <ClInclude Include="..\..\..\include\brepom\RenderBuilder.h" />
     <ClInclude Include="..\..\..\include\brepom\TopoAdapter.h" />
@@ -45,21 +44,17 @@
     <ClInclude Include="..\..\..\include\brepom\TopoVertex.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\..\include\brepom\Object.inl" />
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="..\..\..\source\AttrColor.cpp" />
+    <ClCompile Include="..\..\..\source\AttrPolytope.cpp" />
     <ClCompile Include="..\..\..\source\AttrNamedShape.cpp" />
     <ClCompile Include="..\..\..\source\AttrNaming.cpp" />
     <ClCompile Include="..\..\..\source\AttrRenderObj.cpp" />
     <ClCompile Include="..\..\..\source\BRepBuilder.cpp" />
     <ClCompile Include="..\..\..\source\BRepExplore.cpp" />
     <ClCompile Include="..\..\..\source\CompHalfEdge.cpp" />
-    <ClCompile Include="..\..\..\source\Component.cpp" />
     <ClCompile Include="..\..\..\source\Label.cpp" />
     <ClCompile Include="..\..\..\source\LabelBuilder.cpp" />
     <ClCompile Include="..\..\..\source\LabelTools.cpp" />
-    <ClCompile Include="..\..\..\source\Object.cpp" />
     <ClCompile Include="..\..\..\source\PrimBuilder.cpp" />
     <ClCompile Include="..\..\..\source\RenderBuilder.cpp" />
     <ClCompile Include="..\..\..\source\TopoAdapter.cpp" />
@@ -152,7 +147,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\sm;..\..\..\..\easyvm\include;..\..\..\..\guard\include;..\..\..\..\halfedge\include;..\..\..\..\polymesh3\include;..\..\..\..\unirender\include </AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\sm;..\..\..\..\easyvm\include;..\..\..\..\guard\include;..\..\..\..\halfedge\include;..\..\..\..\polymesh3\include;..\..\..\..\unirender\include;..\..\..\..\objcomp\include</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <Optimization>Disabled</Optimization>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
@@ -162,7 +157,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\sm;..\..\..\..\easyvm\include;..\..\..\..\guard\include;..\..\..\..\halfedge\include;..\..\..\..\polymesh3\include;..\..\..\..\unirender\include </AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\sm;..\..\..\..\easyvm\include;..\..\..\..\guard\include;..\..\..\..\halfedge\include;..\..\..\..\polymesh3\include;..\..\..\..\unirender\include;..\..\..\..\objcomp\include</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>NDEBUG;</PreprocessorDefinitions>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>

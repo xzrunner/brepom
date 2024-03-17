@@ -1,11 +1,11 @@
 #pragma once
 
-#include "Component.h"
+#include <objcomp/Component.h>
 
 namespace brepom
 {
 
-class Attribute : public Component
+class Attribute : public objcomp::Component
 {
 public:
 
