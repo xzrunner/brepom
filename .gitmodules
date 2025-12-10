@@ -1,0 +1,18 @@
+[submodule "external/objcomp"]
+	path = external/objcomp
+	url = git@github.com:xzrunner/objcomp.git
+[submodule "external/sm"]
+	path = external/sm
+	url = git@github.com:xzrunner/sm.git
+[submodule "external/guard"]
+	path = external/guard
+	url = git@github.com:xzrunner/guard.git
+[submodule "external/halfedge"]
+	path = external/halfedge
+	url = git@github.com:xzrunner/halfedge.git
+[submodule "external/polymesh3"]
+	path = external/polymesh3
+	url = git@github.com:xzrunner/polymesh3.git
+[submodule "external/unirender"]
+	path = external/unirender
+	url = git@github.com:xzrunner/unirender.git
