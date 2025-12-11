@@ -97,3 +97,5 @@ include_directories(${CMAKE_SOURCE_DIR}/external/polymesh3/include)
 include_directories(${CMAKE_SOURCE_DIR}/external/unirender/include)
 
 add_library(${PROJECT_NAME} STATIC ${ALL_FILES})
+
+target_include_directories(${PROJECT_NAME} PRIVATE include external/objcomp/include external/sm external/guard/include external/halfedge/include external/polymesh3/include external/unirender/include)
