@@ -10,10 +10,12 @@ set(label__attribute
     "include/brepom/AttrNamedShape.h"
     "include/brepom/AttrNaming.h"
     "include/brepom/AttrRenderObj.h"
+    "include/brepom/AttrPolytope.h"
     "source/AttrColor.cpp"
     "source/AttrNamedShape.cpp"
     "source/AttrNaming.cpp"
     "source/AttrRenderObj.cpp"
+    "source/AttrPolytope.cpp"
 )
 source_group("label\\attribute" FILES ${label__attribute})
 
